@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Redes</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Network Quiz!</h1>
+        <form id="start-form">
+            <label for="username">Nombre:</label>
+            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+            
+            <label for="difficulty">Nivel de dificultad:</label>
+            <select id="difficulty" name="difficulty" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="easy">Fácil (10 preguntas)</option>
+                <option value="medium">Intermedio (30 preguntas)</option>
+                <option value="hard">Difícil (50 preguntas)</option>
+            </select>
+            
+            <button type="submit">Comenzar Quiz</button>
+        </form>
+        
+        <div id="quiz-container" style="display:none;"></div>
+        <div id="result-container" style="display:none;"></div>
+    </div>
+
+    <div id="croqueta-modal" class="croqueta-modal">
+      <div class="croqueta-modal-content">
+        <label for="croqueta-input" class="croqueta-label">¿En serio crees que deberías estar aquí?</label>
+        <input type="password" id="croqueta-input" class="croqueta-input">
+        <div class="croqueta-modal-actions">
+          <button id="croqueta-cancel" class="croqueta-btn">Cancelar</button>
+          <button id="croqueta-ok" class="croqueta-btn">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <img id="duck-secret" src="./img/Perry.webp" alt="Duck" class="duck-secret">
+
+    <script src="js/questions.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
