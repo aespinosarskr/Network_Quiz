@@ -64,8 +64,6 @@ button:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     max-width: 21200px;
     margin: 24px auto;
-    border
-: 1px solid #f31a1a;
 }
 
 #quiz-container h2, #result-container h2 {
